@@ -17,16 +17,16 @@ public class Ex110runner {
         int j;
         FibonacciValue[] seq= new FibonacciValue[MAX];
         System.out.println(title);
-        System.out.println(lo);
+        System.out.println("1: "+lo);
         while(hi<MAX){
+            seq[i]= new FibonacciValue();
             seq[i].value=hi;
+            seq[i].position=i+2;
             seq[i].evenCheck();
+            seq[i].printFib();
             i+=1;
             hi=lo+hi;
             lo=hi-lo; 
-    }
-        for(j=0; j<i;j++){
-            System.out.println(seq[j].value);
-        }
+        }        
     } 
 }

@@ -12,13 +12,19 @@ package exercise1.pkg10;
 public class FibonacciValue {
     public int value;
     public boolean bool;
+    public String mark;
+    public int position;
     
     public void evenCheck(){
-        if (value%2==0){
-            bool=true;
+        bool = value%2==0;
+        if(bool){
+            mark="*";
         }
         else{
-            bool=false;
+            mark="";
         }
+    }
+    public void printFib(){
+        System.out.println(position+": "+value+mark);
     }
 }
